@@ -10,6 +10,38 @@ use PDF;
 
 class ArrayController extends Controller
 {
+    public function csvtoarray()
+    {
+        // $file = file_get_contents(base_path('public/js/Sample100.csv'));
+        // $data = array_map("str_getcsv", preg_split('/\r*\n+|\r+/', $file));
+        // prd($data);
+
+        $row = 1;
+        $array = array();
+        $marray = array();
+        $handle = fopen('js/Sample100.csv', 'r');
+        if ($handle !== FALSE) {
+            while (($data = fgetcsv($handle, 0, ',')) !== FALSE) {
+                if ($row === 1) {
+                    $num = count($data);
+                    for ($i = 0; $i < $num; $i++) {
+                        array_push($array, $data[$i]);
+                    }
+                }
+                else {
+                    $c = 0;
+                    foreach ($array as $key) {
+                        $marray[$row - 1][$key] = $data[$c];
+                        $c++;
+                    }
+                }
+                $row++;
+            }
+            echo '<pre>';
+            print_r($marray);
+            echo '</pre>';
+}
+    }
     public function array()
     {
         return View('products.array');

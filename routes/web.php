@@ -28,6 +28,7 @@ Route::get('/radiantid', [SnappypdfController::class, 'radiantid']);
 Route::get('/api', [ApiController::class, 'api']); 
 
 //array
+Route::get('/csvtoarray', [ArrayController::class, 'csvtoarray']);
 Route::get('/array', [ArrayController::class, 'array']);
 Route::get('/associatve_array', [ArrayController::class, 'associatve_array']);
 Route::get('/associatve_array1', [ArrayController::class, 'associatve_array1']);
