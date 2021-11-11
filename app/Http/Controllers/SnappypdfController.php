@@ -44,4 +44,26 @@ class SnappypdfController extends Controller
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }
+
+    public function hzsdegriclg()
+    {
+        $pdf = PDF::setOption('enable-local-file-access', true)
+        ->loadView('products.hzsdegriclg')
+        ->setOption('page-width', 62)
+            ->setOption('page-height', 95)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 0)
+            ->setOption('margin-bottom', 0);
+        return $pdf->inline('abc.pdf');
+    }
+
+    public function frii()
+    {
+        $pdf = PDF::setOption('enable-local-file-access', true)
+        ->loadView('products.frii')
+        ->setOption('page-width', 62)
+            ->setOption('page-height', 95)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 0)
+            ->setOption('margin-bottom', 0);
+        return $pdf->inline('abc.pdf');
+    }
 }

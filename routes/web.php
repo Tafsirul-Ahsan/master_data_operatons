@@ -23,7 +23,9 @@ use App\Http\Controllers\ApiController;
 //snappy
 Route::get('/welcome', [SnappypdfController::class, 'welcome']);
 Route::get('/id_design', [SnappypdfController::class, 'iddesign']); 
-Route::get('/radiantid', [SnappypdfController::class, 'radiantid']); 
+Route::get('/radiantid', [SnappypdfController::class, 'radiantid']);
+Route::get('/hzsdegriclg', [SnappypdfController::class, 'hzsdegriclg']);
+Route::get('/frii', [SnappypdfController::class, 'frii']);
 
 Route::get('/api', [ApiController::class, 'api']); 
 
