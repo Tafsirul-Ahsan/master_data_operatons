@@ -38,9 +38,9 @@ class SnappypdfController extends Controller
     {
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.radiantid')
-        ->setOption('page-width', 60)
-            ->setOption('page-height', 95)->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)->setOption('margin-top', 0)
+        ->setOption('page-width', 66)
+            ->setOption('page-height', 98)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 3)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }
@@ -49,9 +49,20 @@ class SnappypdfController extends Controller
     {
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.hzsdegriclg')
-        ->setOption('page-width', 62)
-            ->setOption('page-height', 95)->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)->setOption('margin-top', 0)
+        ->setOption('page-width', 66)
+            ->setOption('page-height', 99)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top',0)
+            ->setOption('margin-bottom', 0);
+        return $pdf->inline('abc.pdf');
+    }
+
+    public function hzsdegriclgback()
+    {
+        $pdf = PDF::setOption('enable-local-file-access', true)
+        ->loadView('products.hzsdegriclgback')
+        ->setOption('page-width', 66)
+            ->setOption('page-height', 98)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 3)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }
@@ -60,9 +71,20 @@ class SnappypdfController extends Controller
     {
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.frii')
-        ->setOption('page-width', 62)
-            ->setOption('page-height', 95)->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)->setOption('margin-top', 0)
+        ->setOption('page-width', 66)
+            ->setOption('page-height', 98)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 3)
+            ->setOption('margin-bottom', 0);
+        return $pdf->inline('abc.pdf');
+    }
+
+    public function friiback()
+    {
+        $pdf = PDF::setOption('enable-local-file-access', true)
+        ->loadView('products.friiback')
+        ->setOption('page-width', 66)
+            ->setOption('page-height', 98)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 3)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }

@@ -25,7 +25,9 @@ Route::get('/welcome', [SnappypdfController::class, 'welcome']);
 Route::get('/id_design', [SnappypdfController::class, 'iddesign']); 
 Route::get('/radiantid', [SnappypdfController::class, 'radiantid']);
 Route::get('/hzsdegriclg', [SnappypdfController::class, 'hzsdegriclg']);
+Route::get('/hzsdegriclgback', [SnappypdfController::class, 'hzsdegriclgback']);
 Route::get('/frii', [SnappypdfController::class, 'frii']);
+Route::get('/friiback', [SnappypdfController::class, 'friiback']);
 
 Route::get('/api', [ApiController::class, 'api']); 
 
