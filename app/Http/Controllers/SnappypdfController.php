@@ -39,8 +39,8 @@ class SnappypdfController extends Controller
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.radiantid')
         ->setOption('page-width', 66)
-            ->setOption('page-height', 98)->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)->setOption('margin-top', 3)
+            ->setOption('page-height', 101)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }
