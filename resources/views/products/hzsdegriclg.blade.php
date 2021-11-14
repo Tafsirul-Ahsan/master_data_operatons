@@ -25,19 +25,17 @@
 
     }
     .detail-container {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 0px !important;
-        width: 100%;
+        margin-left: 10px;
+        width: 90%;
         
                 
         }
         .font-bold {
             font-weight: bold; 
-            font-size: 14px; 
-            margin-left: 8%;
-            margin-top: 0px !important;
+            font-size: 13px; 
+            margin-left: 4%;
+            margin-top: 0% !important;
            
         }
 
@@ -45,14 +43,12 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 25%;
+            width: 24%;
             }
         .center2 {
-            margin-top:7px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 30%;
+            margin-top: 0%;
+            margin-left: 30%;
+            width: 39%;
         }
         .center3 {
             margin-top:30px;
@@ -62,19 +58,29 @@
             width: 50%;
         }
         .logo-bold{
-            font-size: 18px;
+            font-size: 14px;
             font-weight: bold;
             text-align: center;
             margin: 0px;
                  }
-
         .header-text{
              text-align: center;
-             font-size: 21px;
+             font-size: 16px;
              font-weight: bold;
-             margin: 0%;
-             background-color: navy;
+             margin-top: 0%;
+             margin-bottom: 2px;
+             background-color: rgb(29, 29, 161);
              color: white;
+             font-family: Arial, Helvetica, sans-serif;
+        }
+        .header-text2{
+             text-align: center;
+             font-size: 14px;
+             font-weight: bold;
+             margin-top: 0%;
+             background-color: rgb(29, 29, 161);
+             color: white;
+             font-family: Arial, Helvetica, sans-serif;
         }
         .idback-text{
             text-align: center;
@@ -86,6 +92,14 @@
              width: 100%;
 
         }
+        .hclass{
+            color: blue;
+             font-size: 14px;
+             font-weight: bold;
+             text-align:center;
+             font-family: Arial, Helvetica, sans-serif;
+             margin:0%;
+        }
 </style>    
 </head>
 <body>
@@ -93,18 +107,18 @@
     
     <img src="C:\xampp\htdocs\master_data_operatons\public\img\degreelogo.png" class="center">
     <h1 class="logo-bold">Est. 1969</h1>
-    <h1 class="header-text">HAJIGONJ  DEGREE COLLEGE</h1>
+    <h1 class="header-text">HAJIGONJ&nbsp; DEGREE&nbsp; COLLEGE</h1>
     <img class="center2" src="C:\xampp\htdocs\master_data_operatons\public\img\student.png">
-    <h1 style="color: blue; font-size: 17px; font-weight:blod; text-align:center;">ROMJAN AHAMED SOBUJ</h1>
-    <div class="detail-container">
+    <h1 class="hclass">ROMJAN AHAMED SOBUJ</h1>
+
     <span class="font-bold">Class&nbsp; &nbsp; &nbsp;    : HSC XI-XII</span><br>
     <span class="font-bold">Roll&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; : BM201603</span><br>
     <span class="font-bold">Section&nbsp; &nbsp;: BM</span><br>
     <span class="font-bold">Year&nbsp; &nbsp; &nbsp;&nbsp; : 2020-21</span><br>
     <span class="font-bold">Mobile&nbsp; &nbsp;&nbsp;: 8801684-086753</span><br>
-    </div>
+    
     <img src="C:\xampp\htdocs\master_data_operatons\public\img\signdegree.png" width="100%">
-    <h1 class="header-text">www.hajigonjdc.edu.bd</h1>
+    <h1 class="header-text2">www.hajigonjdc.edu.bd</h1>
 </div>
 </body>
 </html>   

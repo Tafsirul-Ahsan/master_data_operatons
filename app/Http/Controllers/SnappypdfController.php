@@ -49,8 +49,8 @@ class SnappypdfController extends Controller
     {
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.hzsdegriclg')
-        ->setOption('page-width', 66)
-            ->setOption('page-height', 99)->setOption('margin-left', 0)
+        ->setOption('page-width', 54)
+            ->setOption('page-height', 86)->setOption('margin-left', 0)
             ->setOption('margin-right', 0)->setOption('margin-top',0)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
@@ -60,9 +60,9 @@ class SnappypdfController extends Controller
     {
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.hzsdegriclgback')
-        ->setOption('page-width', 66)
-            ->setOption('page-height', 98)->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)->setOption('margin-top', 3)
+        ->setOption('page-width', 54)
+            ->setOption('page-height', 86)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }
@@ -71,9 +71,9 @@ class SnappypdfController extends Controller
     {
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.frii')
-        ->setOption('page-width', 66)
-            ->setOption('page-height', 98)->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)->setOption('margin-top', 3)
+        ->setOption('page-width', 54)
+            ->setOption('page-height', 87)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }
@@ -82,9 +82,9 @@ class SnappypdfController extends Controller
     {
         $pdf = PDF::setOption('enable-local-file-access', true)
         ->loadView('products.friiback')
-        ->setOption('page-width', 66)
-            ->setOption('page-height', 98)->setOption('margin-left', 0)
-            ->setOption('margin-right', 0)->setOption('margin-top', 3)
+        ->setOption('page-width', 54)
+            ->setOption('page-height', 86)->setOption('margin-left', 0)
+            ->setOption('margin-right', 0)->setOption('margin-top', 0)
             ->setOption('margin-bottom', 0);
         return $pdf->inline('abc.pdf');
     }
